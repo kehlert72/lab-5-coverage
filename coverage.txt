@@ -1,0 +1,21 @@
+test_concat.cpp
+    The coverage for this test is inadequate as it does not account for empty string,
+    commas, or numbers within the string.
+
+test_equality.cpp
+    The coverage for this test is almost complete, however, the max value is not covered.
+    Additionally, the subscript operator is not tested. Furthermore, the final two tests
+    repeat the same test by flipping the variables to different sides of the == operator.
+    This is completely unnecessary, unless this was testing that operator or there was
+    suspicion that it did not work.
+
+test_cstring_ctor.cpp
+    The coverage for cstring is terrible. It does not account for string size of one,
+    typical, and max. Additionally, the test for the default is poorly constructored
+    as the constructor for string does not run completely. ("") should not be included
+    to constructor the default string. Finally, length() should not be used to test
+    the empty string due to it not functioning for an empty string.
+
+test_default_ctor.cpp
+    First off length() should not be included in the default string test. The default test
+    could use a == test for another empty string and a string with some content.

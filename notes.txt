@@ -1,0 +1,9 @@
+Tool is execution based.  It reports all executed function.  It does not know semantically what you are looking for.
+
+Tests for equality are complete.  Max is tested, and the flipping of order is necessary.
+Order can have an impact.  On the others it did not matter.
+
+The c-string test is envoked by String s(""); However, more tests are needed.
+Here coverage is correct.
+
+The default ctor tests and coverage are good/accurate, respectively.
